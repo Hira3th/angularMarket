@@ -1,14 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-  
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  private _registerUrl = "http://localhost:3000/api/User"
-  private _loginUrl = "http://localhost:3000/login"
+  private _registerUrl = "https://mijntest.herokuapp.com/api/User"
+  private _loginUrl = "https://mijntest.herokuapp.com/login"
 
   constructor(private http: HttpClient,
               private _router: Router) { }

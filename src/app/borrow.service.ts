@@ -6,11 +6,11 @@ import { HttpClient } from '@angular/common/http';
 })
 export class BorrowService {
 
-  private _availableItemsUrl = "http://localhost:3000/api/Materials";
+  private _availableItemsUrl = "https://mijntest.herokuapp.com/api/Materials";
 
-  private _getBackUrl = "http://localhost:3000/";
+  private _getBackUrl = "https://mijntest.herokuapp.com/";
 
-  private _postNewMaterial = "http://localhost:3000/api/Materials"
+  private _postNewMaterial = "https://mijntest.herokuapp.com/api/Materials"
 
   constructor(private http: HttpClient) { }
 
