@@ -1,11 +1,12 @@
 //Install express server
 const express = require('express');
+var forceSsl = require('force-ssl-heroku');
 const path = require('path');
 
 const app = express();
 
 // Serve only the static files form the dist directory
-app.use(express.static('./dist/market'));
+app.use(forceSsl);
 
 app.all('/', function(req, res, next) {
     res.header("Strict-Transport-Security", "max-age=63072000; includeSubDomains; preload")
